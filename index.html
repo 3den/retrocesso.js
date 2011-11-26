@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Retrocesso</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 onclick="R.revertEl('sub_text');">Retrocesso <sub id="sub_text">texto ao contrario</sub></h1>
+      </header>
+      <section>
+        <form method="get" class="retro_form" onsubmit="R.revertField('retro_text'); return false;">
+          <input type="submit" class="retro_button" value="Retoceder ->" />
+          <textarea id="retro_text" name="retro[text]"></textarea>
+          <input type="submit" class="retro_button inverted" value="<- Retroceder"/>
+        </form>
+        <br class="clearfix" />
+      </section>
+      <footer id="footer_text" onclick="R.revertEl('footer_text');">By Marcelo Eden</footer>
+    </div>
+    <script type="text/javascript" src="retrocesso.js"></script>
+    <script type="text/javascript">
+      var R = retrocesso;
+    </script>
+  </body>
+</html>
