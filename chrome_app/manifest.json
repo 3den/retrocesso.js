@@ -1,18 +1,18 @@
 {
   "name": "Retrocesso",
-  "description": "A very simple text inversor to put any text backward and forward again.",
+  "description": "A very simple text inversor to make text backward and forward again.",
   "version": "1",
   "app": {
     "urls": [
       "*://retrocesso.3den.org/",
-      "*://3den.github.com/retrocesso.js"
+      "*://3den.github.com/retrocesso.js/"
     ],
     "launch": {
       "web_url": "http://retrocesso.3den.org/"
     }
   },
   "icons": {
-    "128": "icon_128.png"
+    "128": "retrocesso_128.png"
   },
   "permissions": [
     "clipboardRead",
